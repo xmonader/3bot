@@ -22,3 +22,13 @@
 ![Register mockups](./images/register.svg)
 
 (Last screen should show QR code :-) )
+
+
+## As a user register through mobile
+
+### Assumptions
+* Assumptions for PC registration valid here
+* Flow is only valid using the app, when visiting without the app the user should be redirected to Play Store
+
+## Flow
+* Last QR code is not shown, instead  POST https://localhost:80443/api/totp  is called
