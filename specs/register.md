@@ -20,3 +20,5 @@
 ### Mockups
 
 ![Register mockups](./images/register.svg)
+
+(Last screen should show QR code :-) )
