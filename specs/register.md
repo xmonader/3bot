@@ -1,34 +1,16 @@
 # Register
 
 
-## As a user register through PC
+## As a user register
 
-### Assumptions
-* A user can type its place and city/country will be extracted from it. This will be in an auto filling field (first version is ok with Google Maps API)
-* Threefold double name or email address as reference (use regex to check usecase, descriptive for user)
-* Private key is created by backend
-* Mnemonic words / private key are shared with TFT wallet
-* Flow finishes after QR scanning
+Assumptions:
+* Registration of 3bot is located on a ‘centralized bootstrap 3bot’ that has access to the threefold network to launch 3bots and send emails
+* Code wil be added to threefold code base [WHERE?]
+* We need  (WHICH) system to prevent bots for creating lots of (FREE) 3bots
 
-### API
-[TODO]
-
-
-### Flow
-* Send data to backend
-* Register TOTP through API (https://localhost:80443/api/totp)
 ### Mockups
 
 ![Register mockups](./images/register.svg)
 
 (Last screen should show QR code :-) )
 
-
-## As a user register through mobile
-
-### Assumptions
-* Assumptions for PC registration valid here
-* Flow is only valid using the app, when visiting without the app the user should be redirected to Play Store
-
-## Flow
-* Last QR code is not shown, instead  POST https://localhost:80443/api/totp  is called
