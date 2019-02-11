@@ -8,7 +8,7 @@ Assumptions:
 * Code wil be added to threefold code base [WHERE?]
 * We need  (WHICH) system to prevent bots for creating lots of (FREE) 3bots
 * Location is a list of regions to get a 3bot close to your location
-
+* After clicking deploy, user is redirected to it's 3bot for initialization
 ### Mockups
 
 ![Register mockups](./images/register.svg)
