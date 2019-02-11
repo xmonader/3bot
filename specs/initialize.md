@@ -14,6 +14,7 @@
 ### API
 [TODO]
 
+/checkdoublename/{doublename}
 
 ### Flow
 * Send data to backend
