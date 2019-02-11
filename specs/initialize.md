@@ -14,7 +14,7 @@
 ### API
 [TODO]
 
-/checkdoublename/{doublename}
+GET /tfgrid/3bot/{doublename}
 
 ### Flow
 * Send data to backend
