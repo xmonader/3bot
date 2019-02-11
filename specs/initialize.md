@@ -9,6 +9,7 @@
 * Private key is created by backend
 * Mnemonic words / private key are shared with TFT wallet
 * Flow finishes after QR scanning
+* A code should be provisioned to the 3bot so the user can surf to it the first time (can be provided in url)
 
 ### API
 [TODO]
