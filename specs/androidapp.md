@@ -9,6 +9,9 @@ The 3bot android app will be developed by Jimber to support control and onboardi
 ## Functionality
 Besides a webview to open 3bot web interface, the app will provide functionality to login through TOTP either on PC or web comparable to banking apps.
 
+(suggested) 
+Besides a webview to open the 3bot web interface, the app will provide functionality to login through TOTP either on a PC or on a web interface comparable to a banking app.
+
 ### Login
 
 Users can login using their double name and [PASSWORD/PRIVATE KEY?]
@@ -19,7 +22,7 @@ Users can login using their double name and [PASSWORD/PRIVATE KEY?]
 
 Users have an overview of their purchased apps. 
 They can buy new apps by clicking the '+' sign [AVAILABLE_IN_MVP?].
-When purchasing a new app, android will install a new android app on the device. A shortcut will be created on the android homescreen.
+When purchasing a new app, android will install the new android app on the device and a shortcut will be created on the android homescreen.
 The purchased app is also added under 'apps' in the 3bot.
 
 
@@ -39,7 +42,7 @@ Info available in wallet.md
 
 * Verification - Mechanism to change personal id info
 
-Users have an overview of all verification methods. When the user is verified with an institution, a check icon will be shown next to the intitution name
+Users have an overview of all verification methods. When the user is verified with an institution, a check icon will be shown next to the intitution's name
 
 When users are not verified with an institution, they can choose to verify.
 
@@ -107,7 +110,7 @@ return
 ![Initialize mockups](./images/tbotProfileVerification.png)
 
 * Show all verification institutions with a check box when verification is done
-* A back button is available on top of scren to return to the user profile
+* A back button is available on top of the screen to return to the user profile
 
 ```
 GET /tfgrid/3bot/{doublename}/profile/verification
