@@ -13,7 +13,7 @@
  * view open orders
  * view order history
 
- * Overiew wallets
+ * Overview wallets
  * Orders
  * Order history
 
