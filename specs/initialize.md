@@ -19,6 +19,10 @@ GET /tfgrid/3bot/{doublename}
 ### Flow
 * Send data to backend
 * Register TOTP through API (https://localhost:80443/api/totp)
+
+### Relevant links
+- [rivine mnemonic documentation](https://github.com/threefoldtech/rivine/blob/master/doc/wallet.md#private-key-generation) 
+
 ### Mockups
 
 ![Initialize mockups](./images/initialize.svg)
