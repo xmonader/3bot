@@ -11,14 +11,14 @@ Besides a webview to open 3bot web interface, the app will provide functionality
 
 ### Login
 
-Users can login using their double name and [PASSWORD?]
+Users can login using their double name and [PASSWORD/PRIVATE KEY?]
 
 ![Initialize mockups](./images/tbotLogin.png)
 
 ### Apps
 
 Users have an overview of their purchased apps. 
-They can buy new apps by clicking the '+' sign [AVAILIBLE_IN_MVP?].
+They can buy new apps by clicking the '+' sign [AVAILABLE_IN_MVP?].
 When purchasing a new app, android will install a new android app on the device. A shortcut will be created on the android homescreen.
 The purchased app is also added under 'apps' in the 3bot.
 
@@ -27,8 +27,8 @@ Available apps:
 
  * Web shell
  * Browser in browser
- * WebRtc server ( co-work)
- * Easy to create chat bots (co-work??)
+ * WebRTC server ( co-work)
+ * Easy to create chat bots TODO
 
  
 ### Wallets
@@ -143,7 +143,7 @@ GET /tfgrid/3bot/{doublename}/profile/settings
 
 
 ```
-POST /tfgrid/3bot/{doublename}/profile/settings
+PUT /tfgrid/3bot/{doublename}/profile/settings
  {
  “firstname” : “userFirstName”, 
  “lastName” : “userLastName”, 
