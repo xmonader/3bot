@@ -13,15 +13,13 @@ Besides a webview to open 3bot web interface, the app will provide functionality
 
 Users can login using their double name and [PASSWORD?]
 
-![Initialize mockups](./images/tbotApps.png)
+![Initialize mockups](./images/tbotLogin.png)
 
 ### Apps
 
-![Initialize mockups](./images/tbotApps.png)
-
-Users have an overview of their purchased apps. They can buy new apps by clicking the + sign.
-When purchasing a new app, android will install a new app on the device. A shortcut will be created on the android homescreen.
-The purchased app is also added in apps in the 3bot.
+Users have an overview of their purchased apps. They can buy new apps by clicking the '+' sign [AVAILIBLEINMVP?].
+When purchasing a new app, android will install a new android app on the device. A shortcut will be created on the android homescreen.
+The purchased app is also added under 'apps' in the 3bot.
 
 
 Available apps: 
@@ -32,25 +30,9 @@ Available apps:
  * Easy to create chat bots (co-work??)
 
  
-GET /tfgrid/3bot/{doublename}/apps
-
- 
- 
 ### Wallets
 
-![Initialize mockups](./images/tbotWallet1.png)
-
- * Add / upload wallet
- * Buy tft
- * Sell tft
- * view open orders
- * view order history
-
-![Initialize mockups](./images/tbotWallet2.png)
-
- * Overiew wallets
- * Orders
- * Order history
+available in wallet.md
  
 ### Profile
 
@@ -58,46 +40,18 @@ GET /tfgrid/3bot/{doublename}/apps
 
 ![Initialize mockups](./images/tbotProfile.png)
 
-![Initialize mockups](./images/tbotProfileVerification.png)
-
-GET /tfgrid/3bot/{doublename}/profile/verification
-
-{
-    [
-        {"InstitutionName": "Artilium", "verified": true},
-        {"InstitutionName": "Belfius", "verified": false},
-    ]
-}
 
 Users have an overview of all verification methods. When the user is verified with an institution, a check icon will be shown next to the intitution name
 
 When users are not verified with an institution, they can choose to verify.
-When users are verified to an institution, they can [REMOVEVERIFICATION?] or [RENEWVERIFICATION?]
 
 * Change info
-
-![Initialize mockups](./images/tbotProfileSettings.png)
 
 Users can change their 
  Name -> ?
  Email
  Address -> ?
  Telephone
-
-GET /tfgrid/3bot/{doublename}/profile/settings
-POST /tfgrid/3bot/{doublename}/profile/settings
- {
- “firstname” : “userFirstName”, 
- “lastName” : “userLastName”, 
- “email” : “userEmail”, 
- "addressStreet" : “userAddressStreet”,
- "addressStreetNumber" : “userAddressStreetNumber”,
- "addressZipcode" : “userAddressZipCode”,
- "addressCity" : “userAddressCity”,
- "addressCountry" : “userAddressCountry”, 
- "telephone" : “userTelephone"
- }
-
 
 
 ## User stories
@@ -120,6 +74,81 @@ POST /tfgrid/3bot/{doublename}/profile/settings
 
 
 ### As an android user, login using TOTP
+
+### As a user, show your apps
+
+![Initialize mockups](./images/tbotApps.png)
+
+```
+GET /tfgrid/3bot/{doublename}/apps
+return 
+{
+    [
+        {
+            "name": "Web Shell",
+            "images": "webShell.png",
+            "url" : "webshell.apk"
+        },
+            {
+            "name": "co-work",
+            "images": "cowork.png",
+            "url" : "cowork.apk"
+        }
+    ]
+}
+```
+
+### As a user, Show verification methods
+
+![Initialize mockups](./images/tbotProfileVerification.png)
+
+GET /tfgrid/3bot/{doublename}/profile/verification
+
+```
+{
+    [
+        {"InstitutionName": "Artilium", "verified": true, "verificationUrl": "http://www.artilium.com/kyc"},
+        {"InstitutionName": "Belfius", "verified": false, "verificationUrl": "http://www.belfius.be/kyc"},
+    ]
+}
+```
+
+### As a user, show your settings
+
+![Initialize mockups](./images/tbotProfileSettings.png)
+
+GET /tfgrid/3bot/{doublename}/profile/settings
+
+```
+ {
+ “firstname” : “userFirstName”, 
+ “lastName” : “userLastName”, 
+ “email” : “userEmail”, 
+ "addressStreet" : “userAddressStreet”,
+ "addressStreetNumber" : “userAddressStreetNumber”,
+ "addressZipcode" : “userAddressZipCode”,
+ "addressCity" : “userAddressCity”,
+ "addressCountry" : “userAddressCountry”, 
+ "telephone" : “userTelephone"
+ }
+ ```
+
+### As a user, update your settings
+
+POST /tfgrid/3bot/{doublename}/profile/settings
+```
+ {
+ “firstname” : “userFirstName”, 
+ “lastName” : “userLastName”, 
+ “email” : “userEmail”, 
+ "addressStreet" : “userAddressStreet”,
+ "addressStreetNumber" : “userAddressStreetNumber”,
+ "addressZipcode" : “userAddressZipCode”,
+ "addressCity" : “userAddressCity”,
+ "addressCountry" : “userAddressCountry”, 
+ "telephone" : “userTelephone"
+ }
+ ```
 
 #### Flow
 
