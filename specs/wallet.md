@@ -2,7 +2,6 @@
 
 ## Architecture
 
-![Android app architecture](./images/androidapp.svg)
 
 ## Functionality
 
@@ -17,7 +16,6 @@
  * Overiew wallets
  * Orders
  * Order history
-
 
 ## User stories
 

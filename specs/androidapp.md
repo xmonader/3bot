@@ -4,7 +4,7 @@ The 3bot android app will be developed by Jimber to support control and onboardi
 
 ## Architecture
 
-![Android app architecture](./images/androidapp.png)
+![Android app architecture](./images/androidapp.svg)
 
 ## Functionality
 Besides a webview to open 3bot web interface, the app will provide functionality to login through TOTP either on PC or web comparable to banking apps.
@@ -17,7 +17,8 @@ Users can login using their double name and [PASSWORD?]
 
 ### Apps
 
-Users have an overview of their purchased apps. They can buy new apps by clicking the '+' sign [AVAILIBLEINMVP?].
+Users have an overview of their purchased apps. 
+They can buy new apps by clicking the '+' sign [AVAILIBLE_IN_MVP?].
 When purchasing a new app, android will install a new android app on the device. A shortcut will be created on the android homescreen.
 The purchased app is also added under 'apps' in the 3bot.
 
@@ -32,26 +33,23 @@ Available apps:
  
 ### Wallets
 
-available in wallet.md
+Info available in wallet.md
  
 ### Profile
 
-* Mechanism to change personal id info
-
-![Initialize mockups](./images/tbotProfile.png)
-
+* Verification - Mechanism to change personal id info
 
 Users have an overview of all verification methods. When the user is verified with an institution, a check icon will be shown next to the intitution name
 
 When users are not verified with an institution, they can choose to verify.
 
-* Change info
+* Settings - Change info
 
 Users can change their 
- Name -> ?
- Email
- Address -> ?
- Telephone
+* * Name -> ?
+* * Email
+* * Address -> ?
+* * Telephone
 
 
 ## User stories
@@ -63,7 +61,7 @@ Users can change their
 * Predefined website is loaded (build defined)
 
 
-### As an android user, register  using TOTP
+### As an android user, register using TOTP
 * A website is loaded, password is chosen
 * The website adds TOTP key
 ```
@@ -74,6 +72,8 @@ Users can change their
 
 
 ### As an android user, login using TOTP
+
+
 
 ### As a user, show your apps
 
@@ -97,14 +97,20 @@ return
     ]
 }
 ```
+### As a user, show your profile
+
+![Initialize mockups](./images/tbotProfile.png)
+
 
 ### As a user, Show verification methods
 
 ![Initialize mockups](./images/tbotProfileVerification.png)
 
-GET /tfgrid/3bot/{doublename}/profile/verification
+* Show all verification institutions with a check box when verification is done
+* A back button is available on top of scren to return to the user profile
 
 ```
+GET /tfgrid/3bot/{doublename}/profile/verification
 {
     [
         {"InstitutionName": "Artilium", "verified": true, "verificationUrl": "http://www.artilium.com/kyc"},
@@ -117,9 +123,9 @@ GET /tfgrid/3bot/{doublename}/profile/verification
 
 ![Initialize mockups](./images/tbotProfileSettings.png)
 
-GET /tfgrid/3bot/{doublename}/profile/settings
 
 ```
+GET /tfgrid/3bot/{doublename}/profile/settings
  {
  “firstname” : “userFirstName”, 
  “lastName” : “userLastName”, 
@@ -135,8 +141,9 @@ GET /tfgrid/3bot/{doublename}/profile/settings
 
 ### As a user, update your settings
 
-POST /tfgrid/3bot/{doublename}/profile/settings
+
 ```
+POST /tfgrid/3bot/{doublename}/profile/settings
  {
  “firstname” : “userFirstName”, 
  “lastName” : “userLastName”, 
