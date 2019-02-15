@@ -20,8 +20,9 @@ GET /tfgrid/3bot/{doublename}
 * Send data to backend
 * Register TOTP through API (https://localhost:80443/api/totp)
 
-### Relevant links
+### Technical
 - [rivine mnemonic documentation](https://github.com/threefoldtech/rivine/blob/master/doc/wallet.md#private-key-generation) 
+- Generating and decoding a mnemonic is present in Jumpscale
 
 ### Mockups
 
