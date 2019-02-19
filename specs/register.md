@@ -5,8 +5,11 @@
 
 Assumptions:
 * Registration of 3bot is located on a ‘centralized bootstrap 3bot’ that has access to the threefold network to launch 3bots and send emails
-* Code will be added to the threefold code base [WHERE?]
-* We need (WHICH) system to prevent bots for creating lots of (FREE) 3bots
+* Code will be added to the threefold code base
+  * Frontend code & high level flow in this repo
+  * Using JSX as a backend lib for blockchain / ... technology
+* We need a system to prevent bots for creating lots of (FREE) 3bots
+ * Suggestions: Captcha (first version), SMS verification (next version)
 * Location is a list of regions to get a 3bot close to your location
 * After clicking deploy, user is redirected to their 3bot for initialization
 ### Mockups
