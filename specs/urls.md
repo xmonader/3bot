@@ -1,6 +1,6 @@
 # 3bot urls and ssl
 
-In a 3bot record on the blockchain, an ip address and doublename (xxxxx.yyyy) are registered.
+In a 3bot record on the blockchain, an ip address and doublename (xxxxx.yyyyy) are registered.
 
 The ip address is the one from the location where the 3bot is deployed. 
 
