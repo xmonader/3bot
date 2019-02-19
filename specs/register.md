@@ -4,7 +4,7 @@
 ## As a user register
 
 Assumptions:
-* Registration of 3bot is located on a ‘centralized bootstrap 3bot’ that has access to the threefold network to launch 3bots and send emails
+* Registration of a 3bot is located on a ‘centralized bootstrap 3bot’ that has access to the threefold network to launch 3bots and send emails
 * Code will be added to the threefold code base
   * Frontend code & high level flow in this repo
   * Using JSX as a backend lib for blockchain / ... technology
