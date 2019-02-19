@@ -10,6 +10,7 @@
 * Mnemonic words / private key are shared with TFT wallet
 * Flow finishes after QR scanning
 * A code should be provisioned to the 3bot so the user can surf to it the first time (can be provided in url)
+* A first wallet is created when the user creates its 3bot private key, using the same key (this is the default wallet)
 
 ### API
 [TODO]
