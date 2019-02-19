@@ -79,7 +79,7 @@ Users can change their
 
 
 ### As a user, show your apps
-
+TODO Shell -> kosmos
 ![Initialize mockups](./images/tbotApps.png)
 
 ```
