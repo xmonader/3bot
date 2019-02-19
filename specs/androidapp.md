@@ -14,7 +14,7 @@ Besides a webview to open the 3bot web interface, the app will provide functiona
 
 ### Login
 
-Users can login using their double name and [PASSWORD/PRIVATE KEY?]
+Users can login using their double name and fingerprint or pin
 
 ![Initialize mockups](./images/tbotLogin.png)
 
