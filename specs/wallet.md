@@ -2,7 +2,7 @@
 
 ## Assumptions
 - The default wallet shares it key with the 3bot itself
-
+- TODO: add default wallet, not no wallet
 
 ## Architecture
 
