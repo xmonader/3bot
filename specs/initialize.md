@@ -4,7 +4,7 @@
 ## As a user initialize through PC
 
 ### Assumptions
-* A user can type a city and suggested location(s) can be chosen. This will be in an auto filling field (first version is ok with Google Maps API)
+* A user can type a city and a suggested location can be chosen. This will be in an auto filling field (first version is ok with Google Maps API)
 * ThreeFold double name or email address as reference (use regex to check usecase, descriptive for user)
 * Private key is created by backend
 * Mnemonic words / private key are shared with TFT wallet
