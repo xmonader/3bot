@@ -13,3 +13,9 @@ Assumptions:
 
 ![Register mockups](./images/register.svg)
 
+
+### Actions after submitting
+
+- We register 3bot on the blockchain (is in JX)
+- Send email to user; containing link to 3bot init page
+- Deploy 3bot in correct location, configure url in webgateway? [urls](./urls.md)
