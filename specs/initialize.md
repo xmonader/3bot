@@ -26,7 +26,7 @@ GET /tfgrid/3bot/{doublename}
 
 ### Mockups
 
-![Initialize mockups](./images/initialize.svg)
+![Initialize mockups](./images/initialize.svg?sanitize=true)
 
 (Last screen should show QR code :-) )
 
