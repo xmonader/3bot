@@ -1,5 +1,9 @@
 # Wallet (in 3bot itself)
 
+## Assumptions
+- The default wallet shares it key with the 3bot itself
+
+
 ## Architecture
 
 
