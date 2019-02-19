@@ -14,8 +14,9 @@
  * Add / upload wallet
  * Buy tft
  * Sell tft
- * view open orders
- * view order history
+ * View open orders
+ * View order history
+ * Cancel open orders
 
  * Overview wallets
  * Orders
