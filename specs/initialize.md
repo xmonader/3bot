@@ -23,7 +23,11 @@ GET /tfgrid/3bot/{doublename}
 
 ### Technical
 - [rivine mnemonic documentation](https://github.com/threefoldtech/rivine/blob/master/doc/wallet.md#private-key-generation) 
-- Generating and decoding a mnemonic is present in Jumpscale
+- Generating and decoding a mnemonic is present in Jumpscale:
+   ```
+   j.data.encryption.mnemonic_generate
+   j.data.encryption.mnemonic_to_seed
+   ```
 
 ### Mockups
 
