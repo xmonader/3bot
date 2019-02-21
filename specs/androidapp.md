@@ -1,5 +1,5 @@
 # Android App (Jimber Security App)
-
+TODO: freeflow
 The 3bot android app will be developed by Jimber to support control and onboarding for 3bot users. The app will be developed as a generic application that can be used for different purposes, although the first purpose will be to connect to the 3bot UI.
 
 ## Architecture
