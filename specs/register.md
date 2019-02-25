@@ -20,5 +20,6 @@ Assumptions:
 ### Actions after submitting
 
 - We register 3bot on the blockchain (is in JX)
-- Send email to user; containing link to 3bot init page (using a token in the url for security)
 - Deploy 3bot in correct location, configure url in webgateway? [urls](./urls.md)
+- Make sure jimber is present/installed and configured in the 3bot.
+- Send email to user; containing link to 3bot init page (using a token in the url for security)
