@@ -7,3 +7,4 @@ The ip address is the one from the location where the 3bot is deployed.
 Every location runs a webgateway that directs the https requests to the proper 3bot. ssl termination is done on the 3bot itself
 
 In order to serve the dns requests, a coredns infrastructure is needed that is fed with the information from the blockchain.
+![DnsOverview](./images/3bot_DNS.svg?sanitize=true)
